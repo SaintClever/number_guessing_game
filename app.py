@@ -1,6 +1,6 @@
 from ascii_art import art
-import random
-random_num = random.randint(1, 101)
+from random import randint
+random_num = randint(1, 101)
 
 
 print(f'{art}\nWelcome to the Number Guessing Game!\n')
