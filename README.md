@@ -1,3 +1,3 @@
 # number_guessing_game
 
-![number_guessing_game](assets/number_guessing_game.png)
+![number_guessing_game](number_guessing_game.png)
