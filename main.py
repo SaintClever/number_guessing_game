@@ -20,14 +20,14 @@ def user_numbers(chances):
   ''' chances user_num and random_num '''
   user_num = int(input("I'm thinking of a number between 1 and 100: "))
   while chances > 0:
-    if user_num > random_num:
+    if user_num == random_num:
+      return f'\nYou got it! The answer was {random_num}\n'
+    elif user_num > random_num:
       print(f'\nToo high. Guess again. You have {chances} attempt(s) remaining to guess the number.')
       user_num = int(input('Make a guess: '))
     elif user_num < random_num:
       print(f'\nToo low. Guess again. You have {chances} attempt(s) remaining to guess the number.')
       user_num = int(input('Make a guess: '))
-    if user_num == random_num:
-      return f'\nYou got it! The answer was {random_num}\n'
     chances -= 1
     
     
